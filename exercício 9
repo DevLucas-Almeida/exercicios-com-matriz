@@ -1,0 +1,24 @@
+'''9. Escreva um programa que receba os valores de uma matriz 3x3 do usuário e imprime se ela representa um
+quadrado mágico. No quadrado mágico o resultado da soma dos elementos de suas linhas, suas colunas e diagonais
+tem o mesmo valor. Além disso, não pode haver elementos repetidos no quadrado'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        matriz[i][j] = int(input(f"Digite o valor para a posição [{i},{j}]:"))
+s = s1 = s2 = s3 = s4 = s5 = s6 = s7 = 0
+for i in matriz:
+    for j in i:
+        
+for x in range(3):
+    s += matriz[x][0]
+    s1 += matriz[x][1]
+    s2 += matriz[x][2]
+    s3 += matriz[0][x]
+    s4 += matriz[1][x]
+    s5 += matriz[2][x]
+s6 = matriz[0][0] + matriz[1][1] + matriz[2][2]
+s7 = matriz[2][0] + matriz[1][1] + matriz[0][2]
+if s1 == s2 == s3 == s4 == s5 == s6 == s7:
+    print("É uma matriz quadrado magico.")
+else:
+    print("Não é uma matriz quadrado magico.")
