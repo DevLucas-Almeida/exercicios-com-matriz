@@ -1,0 +1,13 @@
+'''4. Escreva um programa que receba os valores de uma matriz 3x3 do usuário e imprima os valores da diagonal
+secundaria de M, sendo M uma matriz quadrada'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        matriz[i][j] = int(input(f"Digite o valor para a posição [{i},{j}]:"))
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        if i == 0 and j == 2 or i == 1 and j == 1 or i == 2 and j == 0:
+            print(matriz[i][j], end=" ")
+        else:
+            print(end="  ")
+    print()
