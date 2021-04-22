@@ -1,0 +1,12 @@
+'''5. Escreva um programa que receba os valores de uma matriz 3x4 do usuário e imprima a matriz transposta(M). Por
+exemplo, M = [[1,1,1,1], [2,2,2,2], [3,3,3,3]] a matriz transposta é [[1,2,3], [1,2,3], [1,2,3], [1,2,3]].'''
+matriz = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+for i in range(3):
+    for j in range(4):
+        matriz[i][j] = int(input(f"Digite o valor para a posição [{i},{j}]:"))
+transposta = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for t in range(4):
+    transposta[t][0] = matriz[0][t]
+    transposta[t][1] = matriz[1][t]
+    transposta[t][2] = matriz[2][t]
+print("A matriz transposta é", transposta)
