@@ -1,0 +1,10 @@
+'''7. Escreva um programa que receba os valores de uma matriz 3x3 do usuário e imprima se ela é triangular superior
+(ou seja, todos oselementos abaixo da diagonal principal são iguais a zero)'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        matriz[i][j] = int(input(f"DIgite o valor para a posição [{i},{j}]:"))
+if matriz[1][0] == 0 and matriz[2][0] == 0 and matriz[2][1] == 0:
+    print("É uma matriz triangular superior.")
+else:
+    print("Não é uma matriz triangular superior.")
