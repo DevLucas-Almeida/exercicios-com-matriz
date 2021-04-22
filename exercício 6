@@ -1,0 +1,13 @@
+'''6. Escreva um programa que receba os valores de uma matriz 3x4 do usuário e imprima uma lista das somas dos
+valores da matriz por coluna.'''
+matriz = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+for i in range(3):
+    for j in range(4):
+        matriz[i][j] = int(input(f"Digite o valor para a posição [{i},{j}]:"))
+lista = []
+for i in range(4):
+    soma = 0
+    for j in range(3):
+        soma += matriz[j][i]
+    lista.append(soma)
+print(lista)
