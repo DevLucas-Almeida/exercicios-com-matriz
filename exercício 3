@@ -1,0 +1,12 @@
+'''3. Escreva um programa que receba os valores de uma matriz 3x3 do usuário e imprima os valores da diagonal'''
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(3):
+    for j in range(3):
+        matriz[i][j] = int(input(f"Digite valor para a posição [{i},{j}]:"))
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        if i == j:
+            print(matriz[i][j], end=" ")
+        else:
+            print(end=" ")
+    print()
