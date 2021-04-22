@@ -2,6 +2,7 @@
 listas. O programa vai receber dois valores do usuário lin e col representando a linha e a coluna de um elemento da
 matriz. O programa deverá apresentar a soma do elemento da posição lin, col com os elementos adjacentes
 (superior, inferior, à esquerda e à direita) que existirem'''
+
 matriz = [[1, 2, 3], [8, 10, 12], [21, 24, 27]]
 li = int(input("digite uma linha:"))
 col = int(input(" digite uma coluna:"))
