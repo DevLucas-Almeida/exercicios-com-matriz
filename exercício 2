@@ -1,0 +1,15 @@
+'''2. Escreva um programa que receba os valores de duas matrizes 2x3 do usuário e apresente a soma de M1 + M2.'''
+matriz = [[0, 0, 0], [0, 0, 0]]
+for c in range(2):
+    for l in range(3):
+        matriz[c][l] = int(input(f"Digite um valor para a posição [{c},{l}]:"))
+matriz2 =[[0, 0, 0], [0, 0, 0]]
+print("Agora digite a proxima matriz")
+for c in range(2):
+    for l in range(3):
+        matriz2[c][l] = int(input(f"Digite um valor para a posição [{c},{l}]:"))
+res = [[0, 0, 0], [0, 0, 0]]
+for x in range(3):
+    res[0][x] = matriz[0][x] + matriz2[0][x]
+    res[1][x] = matriz[1][x] + matriz2[1][x]
+print(f"A soma das matrizes ==",res)
